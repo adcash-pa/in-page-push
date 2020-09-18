@@ -20,7 +20,6 @@ body, p, h1, h2 {
 div[id*='note-'] {
   position: absolute;
   right: 0;
-  background: #fff;
   /* pure-css */
   letter-spacing: -0.31em;
   text-rendering: optimizespeed;
@@ -37,6 +36,7 @@ div[id*='note-'] {
   cursor: pointer;
   transition: padding-right 0.1s;
   overflow: hidden;
+  z-index: 100;
 }
 
 div[id*='note-']:hover {
@@ -48,8 +48,9 @@ div[id*='note-']:hover {
   margin: 5px;
   max-width: 380px;
   border-radius: 6px;
-  box-shadow: 2px 2px 4px #ddd;
+  box-shadow: 2px 2px 4px #353535;
   position: relative;
+  background: #fff;
   /* overflow: hidden; */
 }
 
