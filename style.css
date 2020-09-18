@@ -1,0 +1,124 @@
+
+html {
+  font:400 16px/1.3 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+body, p, h1, h2 {
+  padding: 0;
+  margin: 0;
+}
+
+#frame {
+  position: relative;
+  margin: 5% auto;
+  max-width: 1200px;
+  border: #ccc 2px dashed;
+  display: block;
+  min-height: 600px;
+}
+
+div[id*='note-'] {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  /* pure-css */
+  letter-spacing: -0.31em;
+  text-rendering: optimizespeed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  transition: padding-right 0.1s;
+  overflow: hidden;
+}
+
+div[id*='note-']:hover {
+  padding-right: 18px;
+}
+
+.note-inner {
+  border: #ccc 1px solid;
+  margin: 5px;
+  max-width: 380px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px #ddd;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+div[id*='note-'] p,
+img.graph,
+a.cta,
+div[id*='close-'] {
+  display: inline-block;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: middle;
+  text-rendering: auto;
+}
+
+div[id*='note-'] p {
+  width: 58%;
+  padding-right: 2%;
+}
+
+img.graph {
+  width: 18%;
+  padding: 2%;
+}
+
+a.cta {
+  width: 14%;
+  padding: 1%;
+  margin-right: 2%;
+  background: #ccc;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.1s;
+}
+
+a.cta:hover {
+  background: #a0a0ff;
+}
+
+div[id*='close-'] {
+  font-size: 8px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+  background: #ccc;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  right: -22px;
+  top: 41%;
+}
+
+div[id*='close-']:hover {
+  background: #a0a0ff;
+}
+
+/* numbered */
+
+#note-1 {
+  top: 0;
+}
+
+#note-2 {
+  top: 95px;
+}
+
+#note-3 {
+  top: 190px;
+}
