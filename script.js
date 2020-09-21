@@ -14,8 +14,6 @@ function closeNote() {
   for(var i = 0, len = closeArray.length; i < len; i++) {
       console.log(noteArray[i].id);
       noteArray[i].onclick = function() {
-      console.log('click');
-      console.log(this);
       this.setAttribute('style','display:none');
     }
   }
