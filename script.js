@@ -9,12 +9,11 @@ window.onresize = function() {
 function closeNote() {
   var container = document.querySelector("#frame");
   closeArray = container.querySelectorAll("div[id*='close-']");
-  noteArray = container.querySelectorAll("div[id*='note-']");
 
   for (var i = 0, len = closeArray.length; i < len; i++) {
     (function(index) {
       closeArray[index].onclick = function() {
-        noteArray[index].setAttribute('style', 'display:none');
+        this.parentNode.parentNode.setAttribute('style', 'display:none');
       }
     })(i);
   }
