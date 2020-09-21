@@ -86,7 +86,7 @@ a.cta {
   width: 14%;
   padding: 1%;
   margin-right: 2%;
-  background: #ccc;
+  background: #3b93f7;
   border-radius: 3px;
   text-align: center;
   text-decoration: none;
@@ -122,11 +122,35 @@ div[id*='close-']:hover {
 #note-1 {
   top: 0;
 }
+/* mobile */
+@media only screen and (max-width :480px) {
 
-#note-2 {
-  top: 95px;
-}
+  div[id*="close-"] {
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    padding: 3px;
+    background: #fff;
+    border-radius: 12px;
+    text-align: center;
+    color: #ccc;
+    right: 0;
+    top: -23px;
+  }
 
-#note-3 {
-  top: 190px;
+  div[id*='note-']:hover {
+    padding-right: 0;
+  }
+
+  div[id*='note-'] {
+    overflow: visible;
+  }
+
+  .note-inner {
+    border: none;
+  }
+
+  #note-1 {
+    top: 26px;
+  }
 }
