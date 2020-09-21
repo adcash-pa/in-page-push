@@ -12,7 +12,7 @@ function closeNote() {
       noteArray  = container.querySelectorAll("div[id*='note-']");
 
   for(var i = 0, len = closeArray.length; i < len; i++) {
-      console.log(noteArray[i].id);
+      //console.log(noteArray[i].id);
       noteArray[i].onclick = function() {
       this.setAttribute('style','display:none');
     }
