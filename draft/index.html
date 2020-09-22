@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Offset Challenge</title>
+  <style>
+
+    #frame {
+      max-width: 1280px;
+      height: 720px;
+      margin: 0 auto;
+      background: #444;
+      position: relative;
+      padding: 64px;
+    }
+
+    div[id^='note-'] {
+      text-align: center;
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 400px;
+      border-radius: 4px;
+      padding: 6px;
+      background: #ccc;
+      cursor: pointer;
+      transition: top 0.2s ease;
+    }
+  </style>
+</head>
+<body>
+  <div id="frame">
+    <div id="note-1">1 dolor sit amet</div>
+    <div id="note-2">2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quibusdam error dolorem sit debitis delectus distinctio recusandae quam! Rerum sint, ipsa, repudiandae provident harum error vitae sunt ea aut. Exercitationem!</div>
+    <div id="note-3">3  recusandae quam! Rerum sint, ipsa, repudiandae provident harum error vitae sunt ea aut. Exercitationem!</div>
+    <div id="note-4">4 sdfsdf sit amet</div>
+  </div>
+  <script src="offset.js"></script>
+</body>
+</html>

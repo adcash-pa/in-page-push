@@ -21,10 +21,11 @@ body, p, h1, h2 {
   max-width: 1200px;
   border: #ccc 2px dashed;
   display: block;
-  min-height: 600px;
+  min-height: 600px
+  overflow: hidden;
 }
 
-div[id*='note-'] {
+div[id^='note-'] {
   position: absolute;
   right: 0;
   /* pure-css */
@@ -41,12 +42,13 @@ div[id*='note-'] {
   align-content: flex-start;
   align-items: center;
   cursor: pointer;
-  transition: padding-right 0.1s;
+  transition: padding-right 0.1s, top 0.3s;
+  top: 0;
   overflow: hidden;
   z-index: 100;
 }
 
-div[id*='note-']:hover {
+div[id^='note-']:hover {
   padding-right: 18px;
 }
 
@@ -98,7 +100,7 @@ a.cta:hover {
   background: #a0a0ff;
 }
 
-div[id*='close-'] {
+div[id^='close-'] {
   font-size: 8.5px;
   display: inline-block;
   width: 12px;
@@ -113,7 +115,7 @@ div[id*='close-'] {
   top: 41%;
 }
 
-div[id*='close-']:hover {
+div[id^='close-']:hover {
   background: #a0a0ff;
 }
 
